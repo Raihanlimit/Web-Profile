@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Separuh Aku</title>
+</head>
+<body>
+  <div id="container"></div>
+  
+  <audio id="backgroundAudio" loop>
+  <source src="NOAH_Separuh_Aku.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<script>
+  var audio = document.getElementById("backgroundAudio");
+
+  // Coba autoplay saat halaman dimuat
+  audio.play().catch(function() {
+    // Jika autoplay gagal, tunggu interaksi pengguna
+    document.body.addEventListener('click', function() {
+      audio.play();
+    }, { once: true });
+  });
+</script>
+
+  
+  <div class="ngeblur"></div>
+  
+  <div class="bgtext">
+    <h6><p>"Hanya seorang manusia biasa yang ingin menjadi programmer handal, namun enggan mengoding"</p>
+  </div>
+  
+  <div class="avatar">
+    <img src="https://i.ibb.co/QJh7Yrj/niji.jpg" alt="gambar_ai.jpg">
+  </div>
+    
+    <footer>
+        <strong><p>&copy; 2024 By RenDev</p>
+        </strong>
+    </footer>
+</body>
+</html>
