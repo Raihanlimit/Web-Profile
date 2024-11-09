@@ -18,9 +18,7 @@
 <script>
   var audio = document.getElementById("backgroundAudio");
 
-  // Coba autoplay saat halaman dimuat
   audio.play().catch(function() {
-    // Jika autoplay gagal, tunggu interaksi pengguna
     document.body.addEventListener('click', function() {
       audio.play();
     }, { once: true });
