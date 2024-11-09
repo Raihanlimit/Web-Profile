@@ -10,12 +10,20 @@
 <body>
   <div id="container"></div>
   
-  <div class="audio">
-    <audio controls>
+  <audio id="backgroundAudio" loop>
   <source src="Audio/NOAH_Separuh_Aku.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
-    </audio>
-  </div>
+</audio>
+
+<script>
+  var audio = document.getElementById("backgroundAudio");
+
+  audio.play().catch(function() {
+    document.body.addEventListener('click', function() {
+      audio.play();
+    }, { once: true });
+  });
+</script>
   
   <div class="ngeblur"></div>
   
