@@ -531,6 +531,65 @@ body {
   color: #000;
 }
 
+.instagram {
+  position: absolute;
+  bottom: 34%;
+  left: 16%;
+  transform: translateX(-50%);
+}
+
+.instagram h6 {
+  position: absolute;
+  bottom: -52%;
+  left: 50%;
+  transform: translateX(30%);
+  color: #fff;
+}
+
+.instagram img {
+  width: 25px;
+  height: 25px;
+}
+
+.facebook {
+  position: absolute;
+  bottom: 34%;
+  left: 44%;
+  transform: translateX(-50%);
+}
+
+.facebook h6 {
+  position: absolute;
+  bottom: -52%;
+  left: 50%;
+  transform: translateX(30%);
+  color: #fff;
+}
+
+.facebook img {
+  width: 25px;
+  height: 25px;
+}
+
+.tiktok {
+  position: absolute;
+  bottom: 34%;
+  left: 74%;
+  transform: translateX(-50%);
+}
+
+.tiktok h6 {
+  position: absolute;
+  bottom: -52%;
+  left: 63%;
+  transform: translateX(30%);
+  color: #fff;
+}
+
+.tiktok img {
+  width: 25px;
+  height: 25px;
+}
 
 .avatar {
   position: absolute;
